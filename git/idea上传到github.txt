@@ -1,0 +1,36 @@
+1：安装并配置git
+2：配置本地仓库
+    （1）VCS --> Import into Version Control --> Create Git Repository
+    （2）选择本地仓库位置（个人比较喜欢放在项目根目录下）
+    （3）创建完成后会在该位置生成一个.git文件
+3：提交代码到本地仓库
+    （1）首先要add（将目录下所有新增和修改存至缓存区，但不包括删除）。方式：右键->git->add
+             更改或新增的文件颜色会变为红色，意为可add。
+             add过后的文件颜色会变为绿色
+    （2）其次要commit （将缓存区中的内容保存至本地仓库），文件为绿色意为可commit，方式：右键->git->Commit Directory...
+4：建立本地仓库与远程仓库的连接
+     如果没有远程仓库，需要创建一个远成仓库。可以自己搭建一个，也可以使用码云、coding等。
+     这里使用的是coding。
+   （1）打开Remotes    git->Repository->Remotes...
+   （2）在弹出的小窗口里点击加号，URL里填写在coding创建的项目所提供的https SSH链接。点击ok。
+   （3）正常情况下到这里已经成功建立连接了。
+             在这里可能会出现这个错误：Remote URL test failed: unable to access 'https://git.coding.net/taobu/back.git/': The requested URL returned error: 403
+             这个问题有可能是我们在coding或码云或github上注册账号所使用的邮箱与我们在本地配置git时使用的邮箱不一致。
+             解决方案是使用相同的邮箱即可
+5：上传到远程仓库
+   （1）push到远程仓库  git->Repository->Push
+   （2）登录我们的远程仓库，在我们创建的项目中可以看得到已经有一个分支已成功推送
+
+总结：
+（1）VCS --> Import into Version Control --> Create Git Repository
+（2）右键->git->add
+（3）git->Commit Directory...
+（4）git->Repository->Remotes...
+（5）push到远程仓库  git->Repository->Push
+
+
+
+参考博客：https://www.cnblogs.com/WangYunShuaiBaoLe/p/WY.html
+
+
+

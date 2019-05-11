@@ -1,0 +1,9 @@
+第一步：点击项目右键git->Show Histroy ->选择需要回滚的版本，右键Copy Revision Number
+第二步：方法一：
+之后在TerMinal上输入命令git reset --head XXXXX
+git push -f -u origin master.
+方法二：a.右击项目依次选中：git->Repository->Reset HEAD
+b. 选中Reset Type:Mixed,To Commit:08d537b4fdc74f880f572e948df9a1e87e2ea41f；然后点击Reset按钮
+
+方法一是会把回滚版本之后的全部抹杀掉，而方法二会重新设置一个版本号，不会把回滚版本之后的版本删除掉。
+团队合作的回滚版本最好是使用第二种方法

@@ -1,0 +1,3 @@
+点击菜单栏View->Tool  Windows->Maven projects
+点击菜单栏Help->Find Action(Ctrl+Shift+A),输入Maven projects
+运行clean

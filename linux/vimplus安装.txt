@@ -1,0 +1,10 @@
+安装vimplus
+
+git clone git://github.com/chxuan/vimplus.git ~/.vimplus
+cd ~/.vimplus
+./install.sh
+
+https://github.com/chxuan/vimplus教程
+
+*****vimplus安装后vi指令找不到
+可能是vimplus安装失败。卸载重装！
