@@ -4,3 +4,18 @@ git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录
 git commit -m "first commit" //把文件提交到仓库
 git remote add origin git@github.com:zhangddjs/???.git //关联远程仓库
 git push -u origin master //把本地库的所有内容推送到远程库上
+git remote remove origin //取消关联
+
+
+
+
+
+TIL: git 可以幫你用二分查找的方式找出是在哪次 commit 改壞的
+
+git bisect start
+git bisect good [commit]
+試試重現 bug
+git bisect bad
+再試試
+來回 good bad 直到找到
+git bisect reset

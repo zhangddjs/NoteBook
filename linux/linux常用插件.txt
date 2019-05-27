@@ -1,1 +1,6 @@
-vimplus
+vimplus  先安装vim、再安装vimplus。
+ifconfig网络工具包 yum install -y net-tools
+apt-get指令
+
+
+https://www.cnblogs.com/fonyer/p/9784854.html  常用工具篇

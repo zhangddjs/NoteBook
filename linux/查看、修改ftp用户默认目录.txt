@@ -1,0 +1,13 @@
+查看：
+yum -y  install finger
+finger username
+
+修改：
+1、切换到root用户，直接修改/etc/passwd文件，找到你的用户名你一行，如下图所示修改路径，然后保存即可。
+2、切换到root用户，使用usermod命令，例如usermod -d /tmp test (test为你的用户名)，使用该命令请确保该用户下没有运行的软件或进程。	问题：usermod：无改变。 解决：说明已经改变了？
+3、最后切换到普通账户，就会看到当前默认目录已经更改了。
+4、如果用户不能上传文件，记得chmod -R 777 /file
+
+
+https://www.cnblogs.com/jackyyou/p/5498083.html  常用命令
+
